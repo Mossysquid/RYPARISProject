@@ -1,0 +1,47 @@
+html {
+height: 100%;
+}
+body {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: ghostwhite;
+}
+.head-bar {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white 4px solid;
+
+}
+
+.head-logo {
+   padding-left: 50px; 
+}
+.head-tabs {
+    margin-right: 70px;
+}
+.head-tabs > a {
+   text-decoration: none; 
+   color: black;
+   padding:0px 8px;
+   font-weight: 700;
+}
+.main-buffet-header-countainer {
+
+}
+.main-buffet-header-countainer img {
+width: 100%;
+position: relative;
+z-index: -1;
+}
+ .main-buffet-text {
+position: absolute;
+bottom: 1%;
+left: 35%;
+z-index: 0;
+background-color:ghostwhite;
+}
