@@ -1,5 +1,5 @@
 html {
-height: 100%;
+    height: 100%;
 }
 body {
     width: 100%;
@@ -8,40 +8,298 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: ghostwhite;
+    height: 100%;
 }
+/*top bar*/
 .head-bar {
     background-color: orange;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: white 4px solid;
-
 }
 
 .head-logo {
-   padding-left: 50px; 
+    padding-left: 50px;
 }
 .head-tabs {
-    margin-right: 70px;
+    padding-right: 70px;
 }
-.head-tabs > a {
-   text-decoration: none; 
-   color: black;
-   padding:0px 8px;
-   font-weight: 700;
-}
-.main-buffet-header-countainer {
 
+.head-tabs >a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 8px;
+    font-weight: 700;
+}
+/*main picture*/
+.main-buffet-header-countainer {
+    height: 70%;
 }
 .main-buffet-header-countainer img {
-width: 100%;
-position: relative;
-z-index: -1;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
 }
- .main-buffet-text {
-position: absolute;
-bottom: 1%;
-left: 35%;
-z-index: 0;
-background-color:ghostwhite;
+.main-buffet-text {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    z-index: 0;
+    background-color: ghostwhite;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.main-buffet-text h1 {
+    font-weight: 900;
+    word-spacing: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*main body*/
+.main-body {
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+}
+
+.centerAlignment {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*first and secound white box*/
+.Every-Day-Categories,
+.Where-to-Eat {
+    padding: 2% 5%;
+}
+
+.EveryDayCategories-image-countainer {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.EveryDayCategories-images {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.EveryDayCategories-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.EveryDayCategories-images h4 {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.Every-Day-Categories p,
+.Where-to-Eat p {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/*grey box*/
+.Healthy-Recipes-of-the-Week {
+    background-color: #DADFEA;
+    padding: 0% 5%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.Healthy-Recipes-image-countainer {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.Healthy-Recipes-images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: ghostwhite;
+}
+
+.Healthy-Recipes-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Healthy-Recipes-images h4 {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.Healthy-Recipes-of-the-Week p {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/*bottom bar*/
+.bottom-bar {
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.copy {
+    margin-left: 50px;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-bottom {
+    margin-right: 50px;
+}
+
+.nav-bottom a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* recipe picture*/
+.recipe-buffet-header-countainer {
+    height: 70%;
+}
+
+.recipe-buffet-header-countainer img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+}
+
+/*Grey instructions*/
+.greyInstructions {
+    background-color: #DADFEA;
+    margin: 0%;
+    padding-left: 5%;
+}
+.greyInstructions h3 {
+    padding-top: 2%;
+    font-size: 25px;
+    margin: 0%;
+}
+.greyColumns {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.greyBoldText {
+    font-weight: 800;
+}
+.firstGreyColumn {
+    display: flex;
+    flex-direction: column;
+}
+.secoundGreyColumn {
+    display: flex;
+    flex-direction: column;
+
+}
+.thirdGreyColumn {
+    display: flex;
+    flex-direction: column;
+
+}
+.firstGreyColumn div, .secoundGreyColumn div, .thirdGreyColumn div {
+padding-bottom: 5%;
+}
+/*main body*/
+.mainRecipeBody {
+    background-color: ghostwhite;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.recipeTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipeTitle h1 {
+    margin-top: 20% ;
+    margin-bottom: 0%;
+    font-weight: 900;
+    font-size: 35px;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+.recipePrint button {
+    color: ghostwhite;
+background-color: #A63223;
+border: none;
+border-radius: 30px;
+padding: 10px 25px;
+}
+.recipePrint i {
+    font-size: 115%;
+    color: black;
+    border: black solid 1px;
+    padding: 4px;
+    margin-left: 20px;
+    border-radius: 100%;
+    opacity: 50%;
+}
+.quoteSection {
+    background-color: #DADFEA;
+    opacity: 60%;
+    font-weight: 800;
+    width: 85%;
+    margin: 3% 0%;
+}
+.quoteSection p {
+    text-align: center;
+    font-size: large;
+    padding: 1% 5%;
+}
+.allSections {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.ingredientSection {
+    width: 100%;
+
+}
+li {
+    padding: 1px;
+}
+ol li {
+    margin-bottom: 3%;
+}
+.directionsSection {
+width: 100%;
+}
+ul h4, ol h4 {
+    margin-bottom: 0%;
+}
+/*video section*/
+.recipeTutorial{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 4% 0%;
 }
